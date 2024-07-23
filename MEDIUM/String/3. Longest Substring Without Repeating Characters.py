@@ -15,7 +15,8 @@ class Solution:
                 l += 1
 
         return max_len
-# ///////////////////////////////////////////////////////////////////
+    
+# ///////////////////    OR    ////////////////////////////////////////////////
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         d = {}
