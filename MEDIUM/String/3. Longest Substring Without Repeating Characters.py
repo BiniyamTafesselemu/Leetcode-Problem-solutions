@@ -15,3 +15,21 @@ class Solution:
                 l += 1
 
         return max_len
+# ///////////////////////////////////////////////////////////////////
+class Solution:
+    def lengthOfLongestSubstring(self, s: str) -> int:
+        d = {}
+        l = 0
+        max_length = 0
+        
+        for r in range(len(s)):
+            if s[r] in d and d[s[r]] >= l:
+                l = d[s[r]] + 1
+            d[s[r]] = r
+            max_length = max(max_length, r - l + 1)
+        
+        return max_length
+
+
+            
+
