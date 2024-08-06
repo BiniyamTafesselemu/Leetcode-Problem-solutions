@@ -15,4 +15,8 @@ class Solution:
             else:  # nums[mid] == 2
                 nums[mid], nums[high] = nums[high], nums[mid]
                 high -= 1
+<<<<<<< HEAD
         return nums
+=======
+        return nums
+>>>>>>> d815fd1d516db95dd014903a320e7a8a26352bda
