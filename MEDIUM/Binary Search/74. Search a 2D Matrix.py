@@ -8,7 +8,7 @@ class Solution:
         # Step 1: Binary search to find the correct row
         left, right = 0, m - 1
         while left <= right:
-            mid = left + (right - left) // 2
+            mid = (left + right) // 2
             if matrix[mid][0] <= target <= matrix[mid][-1]:
                 # Target is in this row
                 row = mid
@@ -23,7 +23,7 @@ class Solution:
         # Step 2: Binary search in the found row
         left, right = 0, n - 1
         while left <= right:
-            mid = left + (right - left) // 2
+            mid = (left + right) // 2
             if matrix[row][mid] == target:
                 return True
             elif matrix[row][mid] < target:
