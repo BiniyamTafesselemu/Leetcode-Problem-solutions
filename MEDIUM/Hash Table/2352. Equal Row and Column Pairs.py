@@ -12,8 +12,8 @@ class Solution:
         n = len(grid)
         
         for j in range(n):
-            col = tuple(grid[i][j] for i in range(n))  # Create a tuple for the column
-            count += row_count[col]  # Add the count of this column's matches in rows
+            col = tuple(grid[i][j] for i in range(n))  
+            count += row_count[col]  
         
         return count
 
